@@ -1,0 +1,97 @@
+{
+	"id": "2aa7b5d3-8ba6-e0cb-83a9-18fba520a408",
+	"name": "Payone",
+	"description": "",
+	"order": [
+		"477a1392-f74c-2450-1579-2af94d093d7c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1576631848854,
+	"owner": "2775259",
+	"public": false,
+	"requests": [
+		{
+			"id": "477a1392-f74c-2450-1579-2af94d093d7c",
+			"headers": "",
+			"headerData": [],
+			"url": "https://localhost:5001/GetUser",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1576636837968,
+			"name": "teste payone",
+			"description": "teste",
+			"collectionId": "2aa7b5d3-8ba6-e0cb-83a9-18fba520a408",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 98524,
+					"headers": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/plain; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Wed, 18 Dec 2019 02:37:43 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Kestrel",
+							"description": "A name for the server"
+						},
+						{
+							"name": "status",
+							"key": "status",
+							"value": "200",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"Status\":\"ERROR\",\"Error\":{\"ErrorCode\":\"1203\",\"ErrorMessage\":\"Parameter {mid} faulty or missing\",\"CustomerMessage\":\"An error occured while processing this transaction (wrong parameters).\"}}",
+					"language": "plainText",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Save Error params mid missing",
+					"id": "991f1dd4-e0f4-58f2-5627-ae349adaa7b5",
+					"request": {
+						"url": "https://localhost:5001/GetUser",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		}
+	]
+}
